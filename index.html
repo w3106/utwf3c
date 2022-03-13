@@ -1,0 +1,928 @@
+<!-- PC區塊_主視覺開始 -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta property="og:image" content="https://img.udn.com/art/20190318_3c_SP_01/images/fb-1200x628.jpg"/>
+	 <meta charset="UTF-8" />
+	
+	
+	 
+	<style>
+		:focus {
+		 outline:0;
+	 }
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-text-size-adjust: none;
+			list-style: none;	/* outline: none; */
+		}
+		img { border: 0;}
+		html, body {
+			min-width: 0;/* 必寫!!!*/
+			height: auto;
+			background-image: url(images/index_bg.jpg);/* 滿版主視覺背景 */
+			background-repeat: no-repeat;
+			background-position: center top;
+			/* background-position: center 182px;
+			/* 套HEADER時需要打開 */
+		}
+
+		.bigbang { 
+			display: block; 
+			position: absolute; 
+			top: 0; 
+			left: 0; 
+			z-index: 700;
+			}
+			/* 視覺左上角活動LOGO_樣式 */
+
+		.vspc {
+			width: 100%;
+			height: auto;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			overflow: hidden;
+			}
+
+			
+
+		.vspc img { 
+			display: block;
+			position: relative;
+			}
+
+		/* 視覺左上角活動LOGO_樣式
+---------------------------*/
+.udnLOGO {
+	display: block;
+	z-index: 700;
+	position: absolute;
+	width: calc(139/1190*100%);
+	/* 更改數值 調整logo大小 */
+	left: calc(40/1190*100%);
+	top: calc(8/1190*100%);
+}
+
+.udnLOGO span {
+	display: block;
+	width: 100%;
+	height: 0;
+	background-size: 100% auto;
+	padding-bottom: calc(293/797*100%);
+	/* 更改數值 調整logo整體高度*/
+
+	/* padding-bottom: calc(360/797*100%); */
+	/* 用第4/5 底色_logo 打開開素質 */
+
+	/* 更換需要的logo路徑 2018舊版 or 2019-新版  */
+	background-image: url(https://img.udn.com/art/2019_logo/images/new_udnlogo_01.svg);
+}
+
+	
+
+		.vspc .main{
+			width: 1190px;
+			height: 900px;
+			margin:0 auto;
+			position: relative;
+			
+		}
+
+		.vspc .main .blow{
+			display: block;
+			width: 1207px;
+			height: 850px;
+			background-image:url(images/blow.png); 
+			position: absolute;
+			top:0;
+			left: -265px;
+			-webkit-animation:blow .5s .2s both;
+			-moz-animation:blow .5s .2s both;
+			-ms-animation:blow .5s .2s both;
+			-o-animation:blow .5s .2s both;
+			animation:blow .5s .2s both;
+		}		
+
+		.vspc .main .M_title{
+			display: block;
+			width: 942px;
+			height: 573px;
+			background-image: url(images/M_title.png);
+			position: absolute;
+			top:0px;
+			left:-250px;
+			animation:blow .5s .5s both ;
+		}
+
+		.vspc .main .triangle{
+			display: block;
+			width: 754px;
+			height: 604px;
+			background-image: url(images/triangle.png);
+			position: absolute;
+			top:0;
+			left: 10px;		
+			animation:zoomIn 5s .6s both infinite;
+			
+		}
+
+		
+
+
+		.vspc .main .M_pro{
+			display: block;
+			width: 503px;
+			height: 481px;
+			position: absolute;
+			top:72px;
+			left: 668px;
+			transition-duration: 0.5s;
+			-webkit-animation:bounceInDown .8s .6s both;
+			-moz-animation:bounceInDown .8s .6s both;
+			-ms-animation:bounceInDown .8s .6s both;
+			-o-animation:bounceInDown .8s .6s both;
+			animation:bounceInDown .8s .6s both;
+
+		}
+
+	.vspc .main .M_pro:hover{
+			transform: scale(0.9);
+		}
+
+
+	.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+	@keyframes blow {
+	0% { -webkit-transform:scale(0); -moz-transform:scale(0);-ms-transform:scale(0); -o-transform:scale(0);transform:scale(0); opacity:0;}
+	20% { -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2);transform:scale(1.2); opacity:1;}
+	100% { -webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1); opacity:1;}
+}
+
+	@keyframes decoration {
+	0% { -webkit-transform:scale(0); -moz-transform:scale(0);-ms-transform:scale(0); -o-transform:scale(0);transform:scale(0); opacity:0;}
+	2%,50% { -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2);transform:scale(1.2); opacity:1;}
+	10%,100% { -webkit-transform:scale(1); -moz-transform:scale(1); -ms-transform:scale(1); -o-transform:scale(1); transform:scale(1); opacity:1;}
+}
+
+@keyframes zoomIn {
+
+	
+  2%,50% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+ 
+  10%,100% { -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2); transform:scale(1.2); opacity:1;}
+  }
+
+  
+
+  
+
+
+
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -3000px, 0);
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+	.vspc .main .SALE .btn01 {
+		position: absolute;
+		top:587px;
+		left:20px;
+		transition-duration: 0.5s;
+	}
+
+	.vspc .main .SALE .btn02 {
+		position: absolute;
+		top:587px;
+		left:400px;
+		transition-duration: 0.5s;
+	}
+
+	.vspc .main .SALE .btn03 {
+		position: absolute;
+		top:587px;
+		left:780px;
+		transition-duration: 0.5s;
+	}
+
+	.vspc .main .SALE .btn04 {
+		position: absolute;
+		top:735px;
+		left:20px;
+		transition-duration: 0.5s;
+	}
+
+
+	
+
+	.vspc .main .SALE .btn01:hover,.vspc .main .SALE .btn02:hover,.vspc .main .SALE .btn03:hover {
+		transform: translateY(-10px);
+	}
+
+
+	
+	
+		
+		
+		
+		
+		
+		@media screen and (max-width: 640px) {
+			.vspc { display: none;}
+			
+
+				}
+	</style>
+
+<script src="https://img.udn.com/art/js_temp/jquery.2.2.4.min.js?v005"></script>
+<!-- JQ主程式 -->
+<script src="https://img.udn.com/art/js_temp/eplogo.js"></script>
+
+ <!--輪播套件
+ <link href="https://img.udn.com/art/20190225_mk_SP_01/flexslider.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="https://img.udn.com/art/20190225_mk_SP_01/js/jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+$(window).load(function() {
+	$('.flexslider').flexslider({
+	
+	slideshowSpeed: 3000, 
+	animationSpeed: 500, 
+	touch: true 
+	})
+})
+</script>-->
+
+
+<a id="PageTop" name="PageTop"></a>
+	<div class="vspc">
+			
+		
+		<div class="main">
+			<img src="images/index_01.jpg">
+			<div class="blow"></div>
+			<div class="M_title"></div>
+			<div class="triangle"></div>
+			
+			<div class="M_pro"><a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_021_004" target="_blank"><img src="images/M_pro.png"></a></div>
+				
+						
+				 <!-- 鋪底 -->	
+			<div class="SALE">		
+				<a class="btn01" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_002_008" target="_blank"><img src="images/SALE01.png"></a>
+				<a class="btn02" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_001" target="_blank"><img src="images/SALE02.png"></a>
+			    <a class="btn03" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_006" target="_blank"><img src="images/SALE03.png"></a>
+				<div class="btn04"><img src="images/SALE04.png" usemap="#Map">
+                  <map name="Map">
+                    <area shape="rect" coords="247,28,342,114" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=HAqLVUAThn" target="_blank">
+                    <area shape="rect" coords="356,25,467,111" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9UmEDdI2U7" target="_blank">
+                    <area shape="rect" coords="477,22,588,111" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=cZVM0UjEPS" target="_blank">
+                    <area shape="rect" coords="607,22,716,110" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=jkkfT7y6Va" target="_blank">
+                    <area shape="rect" coords="727,23,835,114" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9hiLn3wviN" target="_blank">
+                    <area shape="rect" coords="843,18,960,116" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9HFdPNgLQ6" target="_blank">
+                    <area shape="rect" coords="965,20,1083,116" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=JLn4stRbEj" target="_blank">
+                  </map>
+				</div>			
+		
+
+			<!-- LOGO --> 
+			<a href="https://shopping.udn.com/mall/Cc1a00.do" target="_blank" class="udnLOGO"><span></span></a> </div>
+			
+		</div>
+		
+	</div>
+
+<!-- PC區塊_主視覺結束 -->
+
+
+
+<!-- MOBILE區塊_主視覺開始 -->
+	<style>
+		.vsmobile {
+			max-width: 640px;
+			margin: 0 auto;
+			display: none;
+			
+		}
+		.vsmobile img {
+			max-width: 100%;
+			height: auto;
+			display: block;}
+		
+		
+		
+		
+		@media screen and (max-width: 640px) {
+			.vsmobile { display: block;
+						min-width: 320px;;
+			}
+		}
+	</style>
+	
+<!-- imageMap RWD開始 -->
+<script src="https://img.udn.com/art/js_temp/jquery.rwdImageMaps.min.js?v005"></script>
+<script>
+	$(function () {
+		$('img[usemap]').rwdImageMaps();
+	});
+</script>
+<!-- imageMap RWD結束 -->
+
+	<div class="vsmobile">
+		<img src="images/mobile.jpg" usemap="#Map3">
+        <map name="Map3">
+		  <area shape="rect" coords="20,8,172,79" href="https://shopping.udn.com/mall/Cc1a00.do" target="_blank">        
+		  
+          <area shape="rect" coords="14,487,607,952" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_021_004" target="_blank">
+          <area shape="rect" coords="22,962,628,1084" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_001_002_008" target="_blank">
+          <area shape="rect" coords="10,1106,311,1227" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_001" target="_blank">
+          <area shape="rect" coords="330,1106,630,1228" href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_006" target="_blank">
+          <area shape="rect" coords="130,1263,273,1360" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9UmEDdI2U7" target="_blank">
+          <area shape="rect" coords="289,1264,436,1362" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=cZVM0UjEPS" target="_blank">
+          <area shape="rect" coords="452,1263,603,1365" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=jkkfT7y6Va" target="_blank">
+          <area shape="rect" coords="132,1374,273,1474" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9hiLn3wviN" target="_blank">
+          <area shape="rect" coords="288,1376,438,1479" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=9HFdPNgLQ6" target="_blank">
+          <area shape="rect" coords="451,1377,608,1480" href="https://shopping.udn.com/mall/cus/event/ExchangeCoupon.do?dc_xuid_0=JLn4stRbEj" target="_blank">
+        </map> 
+	 
+		
+
+      
+	</div>
+<!-- MOBILE區塊_主視覺結束 -->
+
+
+
+<!-- PC區塊_側欄開始 -->
+<style>
+
+	.sbar *{
+		margin: 0;
+		padding: 0;
+		-webkit-text-size-adjust: none;
+		list-style: none;
+	}
+
+
+	.sbar {
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		font-family: "Century Gothic", "Microsoft JhengHei", 'Microsoft JhengHei UI Regular', '微軟正黑體 Light', '微軟正黑體', sans-serif;
+		text-align: center;
+		position: fixed;
+		z-index: 999;
+		overflow: hidden;
+		width: 160px;
+		/* PC區塊側欄_寬，依圖寬填入 */
+		height: 500px;
+		/* PC區塊側欄_高,依圖高填入 */
+		top: 70px;
+		/* PC區塊側欄_離上方距離 */
+		right: 0px;
+		/* PC區塊側欄_離右方距離 */
+		transition: all .3s;
+		/* top: 150px; */
+		/* 套HEADER時需要打開 */
+	}
+
+	.sbar>ul {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	.sbar>ul>li {
+		display: block;
+		position: absolute;
+	}
+
+	.sbar>ul>li.sright {
+		width: 100%;
+		height: 100%;
+		/* background: red;*/
+	}
+
+	.sbar>ul>li.sleft {
+		width: 30px;
+		height: 100%;
+		cursor: pointer;
+		background: url(images/pc_right_bar.png) left top no-repeat;
+	}
+
+	.sbarright {
+		right: -130px;
+	}
+
+	.sbartop {
+		top: 70px;
+	}
+
+	@media screen and (max-width: 640px) {
+		.sbar {
+			display: none;
+		}
+	}
+</style>
+<script>
+	$(function () {
+		var WW = $(window).width();
+		if (WW < 1510) {
+			$(".sbar").addClass("sbarright");
+		} else {
+			$(".sbar").removeClass("sbarright");
+		}
+		$(".sleft").click(function () {
+			$(".sbar").toggleClass('sbarright');;
+		});
+		$(window).resize(function () {
+			var WW = $(window).width();
+			if (WW < 1510) {
+				$(".sbar").addClass("sbarright");
+			} else {
+				$(".sbar").removeClass("sbarright");
+			}
+		});
+		$(window).scroll(function () {
+			var HH = $(window).scrollTop();
+			if (HH > 80) {
+				$(".sbar").addClass("sbartop");
+			} else {
+				$(".sbar").removeClass("sbartop");
+			}
+		});
+		$("#backtop").click(function () {
+			// $(window).scrollTop(0);
+			$("html,body").animate({
+				scrollTop: 0
+			}, 800);
+		});
+	});
+</script>
+<div class="sbar">
+	<ul>
+		<li class="sright"><img src="images/pc_right_bar.png" alt="" usemap="#Map111">
+		  <map name="Map111">
+			  <area shape="rect" coords="35,6,155,169" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=20221231317GF2U3oVHo" target="_blank">
+			  <area shape="rect" coords="37,458,152,482" href="javascript:void(0)" id="backtop">
+	        <area shape="poly" coords="37,175,154,182,152,208,35,208" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=20250318250kNYAGbqy" target="_blank">
+		    <area shape="poly" coords="33,219,156,216,153,251,35,248" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=211710061032Ced7vUlp" target="_blank">
+		    <area shape="poly" coords="37,254,157,263,154,288,34,288" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202212312914i617XGIg" target="_blank">
+		    <area shape="poly" coords="34,300,153,296,156,330,37,330" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=2022123130TiDRCTZDEj" target="_blank">
+		    <area shape="poly" coords="37,336,153,341,156,376,35,368" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=211711127k9fqSSrwC7" target="_blank">
+		    <area shape="poly" coords="33,380,154,384,153,411,34,408" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=211711128FqcQoDpFBv" target="_blank">
+		    <area shape="poly" coords="36,416,153,423,154,456,35,448" href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=211711126yiolwfARCY" target="_blank">
+		  </map>
+	  </li>
+		<li class="sleft"></li>
+	</ul>
+</div>
+<!-- PC區塊_側欄結束 -->
+
+
+<!-- MOBILE區塊_下方選單開始 -->
+<style>
+	.bbar {
+		display: none;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		position: fixed;
+		z-index: 999;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-image: url(images/mobile_right_bar.png);
+		/* 選單背景圖 */
+		overflow: hidden;
+		width: 100vw;
+		height: calc(80vw / 640 * 100);
+		bottom: 0px;
+	}
+
+	.bbar>a {
+		box-sizing: inherit;
+		-webkit-box-sizing: inherit;
+		text-decoration: none;
+		display: block;
+		float: left;
+		width: calc(100vw/4);
+		/* MO2BILE區塊下方選單_數量,有幾個就除幾個(目前6) */
+		height: 100%;
+	}
+
+	@media screen and (max-width: 640px) {
+		.bbar {
+			display: block;
+		}
+	}
+</style>
+<div class="bbar">
+		<a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=20221231317GF2U3oVHo"target="_blank"></a>
+		<a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=20250318250kNYAGbqy"target="_blank"></a>
+		<a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=202212312914i617XGIg"target="_blank"></a>
+		<a href="https://shopping.udn.com/mall/cus/event/eventPage.do?header=false&UrlRefXuid=211711126yiolwfARCY"target="_blank"></a>
+
+	<!-- MOBILE區塊下方選單_數量,有幾個就開幾排<a>(目前6) -->
+</div>
+<!-- MOBILE區塊_下方選單結束 -->
+
+		
+	
+	
+	
+<!-- 宮格標題區 css -->
+<style>
+	.wrap_title_0001{ width: 100%; font-size: 40px; line-height: 60px; height: 80px; font-family: 'Arial', 'Helvetica,Verdana','Microsoft JhengHei UI Regular','微軟正黑體 Light','微軟正黑體','新細明體', 'Noto Sans TC'; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+	.wrap_title_0001 *{ width: 100%; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+	.wrap_title_0001 a, .wrap_title_0001 a:hover, .wrap_title_0001 a:visited, .wrap_title_0001 a:active{ color: #362e2b; text-decoration: none; outline: 0;}
+	
+	.wrap_title_0001 .title_outer{ width: 100%; max-width: 1200px; margin: 0 auto; padding: 10px;}
+	.wrap_title_0001 .title_outer .title_inner{ width: 100%; max-width: 600px; margin: 0 auto; text-align: center; border-radius: 50px;}
+	
+	/*標題底色*/
+	.wrap_title_0001{ /*background: url(http://img.udn.com/art/20180601_cool/images/title_0001.png) top center repeat-x rgba(70,187,192,1);*/ background-image:linear-gradient(to bottom, #e5004f,#601986);background-color: #e5004f;}
+	/*文字顏色*/
+	.wrap_title_0001 .title_outer .title_inner{font-size: 40px; background-color: #FFFFFF; color: #000;  font-weight:bold;}
+	@media all and (max-width:640px), all and (max-device-width:640px){
+	.wrap_title_0001 .title_outer .title_inner{ font-size: 6vw;}
+	}
+	</style>
+	
+	<!-- 宮格區 css -->
+	<style>
+	.wrap_box_0b4s{ width: 100%; font-size: 13px; line-height: 18px; font-family: 'Arial', 'Helvetica,Verdana','Microsoft JhengHei UI Regular','微軟正黑體 Light','微軟正黑體','新細明體', 'Noto Sans TC'; padding: 10px 10px 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+	.wrap_box_0b4s.last{padding: 10px 10px}
+	.wrap_box_0b4s:last-child{ padding-bottom: 10px;}
+	.wrap_box_0b4s *{ width: 100%; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;transition: 0.5s;}
+	.wrap_box_0b4s a, .wrap_box_0b4s a:hover, .wrap_box_0b4s a:visited, .wrap_box_0b4s a:active{ color: #362e2b; text-decoration: none; outline: 0;}
+	
+	.wrap_box_0b4s .box_outer{ width: 100%; max-width: 1200px; margin: 0 auto; background-color: #fff; display: table;}
+	.wrap_box_0b4s .box_outer .box_inner{ width: 23.75%; margin: 10px 0 10px 1%; border: 1px solid #e5e5e5; float: left; padding-bottom: 10px; position: relative;}
+	.wrap_box_0b4s .box_outer .box_inner .box_icon{ width: 66px; height: 66px; border-radius: 33px; position: absolute; top: 15px; left: 15px;}
+	.wrap_box_0b4s .box_outer .box_inner .box_icon:before{ content: ""; width: 0; height: 100%; display: inline-block; vertical-align: middle;}
+	.wrap_box_0b4s .box_outer .box_inner .box_icon span{ width: 70%; display: inline-block; vertical-align: middle; text-align: center; margin-left: 15%; margin-right: 15%; line-height: 16px;}
+	.wrap_box_0b4s .box_outer .box_inner .box_photo{ padding: 10px; }
+	.wrap_box_0b4s .box_outer .box_inner .box_photo img{ width: 100%; display: block;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h1{ color: #fff; padding: 0 10px; height: 26px; line-height: 26px; font-size: 15px; overflow: hidden; text-align: center;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h2{ color: #4f4f4f; padding: 0 11px; margin: 10px 0; height: 54px; overflow: hidden; text-align: center;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price{ padding: 0 10px; text-align: center;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin{ color: #6b6b6b; display: inline; text-decoration: line-through;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale{ display: inline; font-size: 20px; font-weight: bold; color: #E60021;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale3{ display: inline; font-size: 20px; font-weight: bold; color: #E60021;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin:before, .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_sale:before{ content: "$"; font-size: 13px;}
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .price_origin:before, .wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price .sale2:before {content: "折後價$"; font-family: Microsoft JhengHei;}
+	
+	@media all and (max-width:768px), all and (max-device-width:768px){
+	.wrap_box_0b4s .box_outer{ max-width: 768px;}
+	.wrap_box_0b4s .box_outer .box_inner{ width: 47%; margin: 10px 0 10px 2%;}
+	.wrap_box_0b4s .box_outer .box_inner:nth-child(1), .wrap_box_0b4s .box_outer .box_inner:nth-child(2){ margin-bottom: 0;}
+	.wrap_box_0b4s .box_outer .box_inner .box_icon{ top: 5px; left: 5px;}
+	}
+	/*宮格底色*/
+	.wrap_box_0b4s{ background-color: #7c0770;/*background: url(http://img.udn.com/art/20180601_cool/images/BGBG.jpg) top center repeat rgba(228,228,228,1);*/}
+	/*圓標底色*/
+	.wrap_box_0b4s .box_outer .box_inner .box_icon{ background-color: #eb5e00; color: #fff;}
+	/*特標底色*/
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_h1{ background-color: #e5004f;}
+	/*價格顏色*/
+	.wrap_box_0b4s .box_outer .box_inner .box_txt .box_txt_price{ color: #E60021;}
+
+	.wrap_box_0b4s .box_outer .box_inner:hover{transform: scale(1.03);}
+
+	.pc_marks .re_marks{
+			text-align: center;
+			font-size: 12px;
+			line-height: 30px;
+			background-color: #000;
+			color: #fff;
+		}
+		
+	
+	</style>
+	
+	
+	
+<!-- 1 -->
+<div class="wrap_title_0001">
+	<div class="title_outer">
+		<div class="title_inner">3C精選 指定商品88折起</div>
+	</div>
+</div>
+<!-- 第1-1排 -->
+<div class="wrap_box_0b4s">
+	<div class="box_outer">
+		<!-- 商品1 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=E_001_002_008&dc_cargxuid_0=U010385293" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000000/APPROVED/U010385293/20181102123029511_1000.jpg?t=20190226173545"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">下殺92折</div><!-- 特標 -->
+					<div class="box_txt_h2">Apple MacBook Pro 13.3吋 256GB Touch Bar 筆電</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">53,268</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品2 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=E_012_007_011" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0005240/APPROVED/U010402378/20181225113344783_1000.jpg?t=20190223211833"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">結帳88折下殺</div><!-- 特標 -->
+					<div class="box_txt_h2">Netgear 夜鷹 R9000 無線寬頻分享器</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						結帳價<div class="price_sale">13,182</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品3 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c02.do?dc_cateid_0=P_007_005_005&dc_cargxuid_0=U010461762" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000000/APPROVED/U010461762/copy_p_201901101105236770_1000.jpg?t=20190226105051"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">熱銷95折加送羅技滑鼠</div><!-- 特標 -->
+					<div class="box_txt_h2">◆快速到貨◆英國 Marshall Acton II 藍牙喇叭</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">11,300</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品4 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=P_001_006_001_015" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0005183/APPROVED/U010346725/copy_p_201808131514382790_1000.jpg?t=20190219164052"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">結帳9折↘專為MAC設計</div><!-- 特標 -->
+					<div class="box_txt_h2">AZIO MK MAC 機械式鍵盤
+</div><!-- 品名 -->					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						結帳<div class="price_sale">3,141</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- END -->
+	</div>
+</div>
+	
+	
+	
+	
+	
+	
+<!-- 1 -->
+<div class="wrap_title_0001">
+	<div class="title_outer">
+		<div class="title_inner">相機/手機 指定商品結帳再折</div>
+	</div>
+</div>
+	
+	
+
+<!-- 第1-2排 -->
+
+<div class="wrap_box_0b4s">
+	<div class="box_outer">
+		<!-- 商品1 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=F_006_016_007" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000573/APPROVED/U010474919/20190125160938320_1000.jpg?t=20190125162131"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">一鍵切換，橫拍豎拍</div><!-- 特標 -->
+					<div class="box_txt_h2">WEIFENG Wi-310 手持穩定器(手機/Gopro)-平輸</div><!-- 品名 -->					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">2,480</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品2 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=F_004_007_006_011" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000266/APPROVED/U010174967/20180105171236331_1000.jpg?t=20181219114002"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">限時87折</div><!-- 特標 -->
+					<div class="box_txt_h2">Manfrotto Element 鋁合金大型腳架</div><!-- 品名 -->			<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">3,915</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品3 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_001_006_059" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0005270/APPROVED/U010471547/20190122121536215_1000.jpg?t=20190213104732"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">結帳95折</div><!-- 特標 -->
+					<div class="box_txt_h2">Apple iPhone XR 128G
+</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">26,999</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品4 -->
+		<div class="box_inner"> 
+				<a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=Q_003_011_001">
+			<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo"> <img src="https://img.udn.com/image/product/S0000000/APPROVED/U010460758/copy_p_201901081726548290_1000.jpg?t=20190131144305"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">贈收納保貼組</div><!-- 特標 -->
+					<div class="box_txt_h2">【Nintendo 任天堂】Switch主機 </div><!-- 品名 -->					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">9,780</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+			</a>
+		</div>
+		<!-- END -->
+	</div>
+</div>
+	
+	
+	
+
+
+
+
+ 
+<div class="wrap_title_0001">
+	<div class="title_outer">
+		<div class="title_inner">大家電全館75折up 最高降一萬</div>
+	</div>
+</div>
+
+<!-- 第2-1排 -->
+<div class="wrap_box_0b4s">
+	<div class="box_outer">
+		<!-- 商品1 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=S_002_003_004" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0003340/APPROVED/U007289784/20160324122859435_1000.jpg?t=20160324202834"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">潮濕out!全館93折</div><!-- 特標 -->
+					<div class="box_txt_h2">阿拉斯加 968SRN暖風乾燥機-220V</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">13,597</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品2 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=R_001_003_001" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000085/APPROVED/U010190195/20180627164904984_1000.jpg?t=20190211142954"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">現降三千送平板</div><!-- 特標 -->
+					<div class="box_txt_h2">YAMAHA AXIS Z 勁豪125 碟煞日行燈版</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						結帳價<div class="price_sale">64,800</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品3 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_001_002_007" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+				  <img src="https://img.udn.com/image/product/S0003763/APPROVED/U010360183/20181002120545142_1000.jpg?t=20190222143835"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">護眼電視送安裝</div><!-- 特標 -->
+					<div class="box_txt_h2">(快倉)BenQ 55吋4K HDR連網液晶顯示器E55-700</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">18,888</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- 商品4 -->
+		<div class="box_inner">
+		  <a href="https://shopping.udn.com/mall/cus/cat/Cc1c01.do?dc_cateid_0=G_006_015_003" target="_blank">
+				<!-- <div class="box_icon"><span>圓標內文字最多九字</span></div> -->
+				<div class="box_photo">
+					<img src="https://img.udn.com/image/product/S0000000/APPROVED/U010484045/copy_p_201902131446501820_1000.jpg?t=20190223101111"><!-- 圖片位置 -->
+				</div>
+				<div class="box_txt">
+					<div class="box_txt_h1">汰舊換新88折起</div><!-- 特標 -->
+					<div class="box_txt_h2">Panasonic500公升三門變頻冰箱</div><!-- 品名 -->
+					<div class="box_txt_price">
+						<!-- <div class="price_origin">100,000</div> --><!-- 原價 -->
+						<div class="price_sale">36,400</div><!-- 特價 -->
+					</div>
+					<div class="box_txt_btn"></div>
+				</div>
+		  </a>
+		</div>
+		<!-- END -->
+	</div>
+</div>
+	
+	
+	
+	
+
+	
+	
+
+
+
+
+
+
+<div class="pc_marks">	
+					<div class="re_marks">本活動頁優惠商品數量有限，售完為止。本活動頁商品規格、顏色、價位、贈品、回饋金如與購物車不符，以購物車標示為準。</div>
+					
+					</div>
